@@ -61,6 +61,16 @@ RUN rm /usr/bin/python
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
 
+# Python Prerequisites Required
+RUN pip3 install numpy
+RUN pip3 install pandas
+RUN pip3 install six
+RUN pip3 install h5py
+RUN pip3 install Matplotlib
+RUN pip3 install uncertainties
+RUN pip3 install lxml
+RUN pip3 install scipy
+
 # installs OpenMc from source 
 RUN cd opt && \
     git clone https://github.com/openmc-dev/openmc.git && \  
