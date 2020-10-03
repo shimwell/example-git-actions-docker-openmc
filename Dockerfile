@@ -98,7 +98,7 @@ ENV OPENMC_CROSS_SECTIONS=/nndc-b7.1-hdf5/cross_sections.xml
 
 # make sure that pytest is installed
 # we'll need it to run the tests!
-RUN pip install pytest
+RUN pip3 install pytest
 
 # Copy over the source code
 COPY minimal_openmc_simulations minimal_openmc_simulations/
