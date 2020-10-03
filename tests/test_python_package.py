@@ -11,4 +11,4 @@ class TestMyProject(unittest.TestCase):
     def test_simulation_result(self):
         simulation = MinimalSimulation()
         tbr = simulation.simulate()
-        assert tbr > 1/0
+        assert tbr > 1.0
